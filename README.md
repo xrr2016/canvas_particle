@@ -1,4 +1,4 @@
 ## 我的个人简介
 
 
-[查看]('xiaoranran.site')
+[查看]('http://xiaoranran.site')
