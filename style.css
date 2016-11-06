@@ -3,20 +3,67 @@ html, body {
     margin: 0;
     background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 50%, rgba(255, 255, 255, 0.02) 61%, rgba(0, 0, 0, 0.02) 73%), linear-gradient(33deg, rgba(255, 255, 255, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
     background-blend-mode: normal, color-burn;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+.block{
+  background-color: #606060;
+  display:inline-block;
 }
 .container{
   position: relative;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   background-color: #fff;
-  border: 1px solid #ddd;
+  box-shadow: 2px 4px 4px rgba(10,10,10,.8)
 }
 .header{
-  width: 100%;
-  height: 240px;
-  background-color: #00a497;
+  height: 40px;
+  background-color: #3f83c4;
 }
-.concat{
-  height: 80px;
-  background-color: #478384;
+.name{
+    background-color: #fff;
+    text-align: center;
+}
+.name h2{
+  margin: 24px auto;
+  font-weight: bolder;
+}
+.name p{
+  font-size: 14px;
+  color: #8d8d8d;
+  margin-top: -10px;
+  margin-bottom: 36px;
+}
+.contact{
+  width: 80%;
+  margin: 24px auto;
+  height: 40px;
+  padding: 0;
+  list-style: none;
+  color: #3f3f3f;
+  border-top: 2px solid #3f3f3f;
+  border-bottom: 2px solid #3f3f3f;
+}
+.contact .block{
+  position: relative;
+  width: 18px;
+  height: 4px;
+  top:-6px;
+  right: 6px;
+}
+.contact li{
+  display: inline-block;
+  width: 20%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+.contact:nth-of-type(1){
+  font-weight: bolder;
+}
+.contact .email{
+  width: 56%;
+  border-left: 2px solid #3f3f3f;
+  border-right: 2px solid #3f3f3f;
 }
