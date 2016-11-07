@@ -37,7 +37,6 @@ html, body {
 .contact{
   width: 80%;
   margin: 24px auto;
-  height: 40px;
   padding: 0;
   list-style: none;
   color: #3f3f3f;
@@ -66,4 +65,47 @@ html, body {
   width: 56%;
   border-left: 2px solid #3f3f3f;
   border-right: 2px solid #3f3f3f;
+}
+.about-me{
+  width: 70%;
+  padding: 12px;
+  margin: 0 auto;
+}
+.about-me .block{
+  position: relative;
+  width: 36px;
+  height: 10px;
+  display: inline-block;
+}
+.about-me h2{
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bolder;
+  color: #000;
+  text-align: center;
+}
+.about-me p{
+  font-size: 16px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-indent: 2em;
+  text-align: left;
+}
+
+
+@media (max-width:640px) {
+  html,body{
+    font-size: 12px;
+    height: 100%;
+    padding: 0;
+  }
+  .container{
+    width: 100%;
+  }
+  .contact li{
+    font-size: 12px;
+  }
+  .about-me h2{
+    font-size: 20px;
+  }
 }
