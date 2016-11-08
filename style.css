@@ -6,8 +6,19 @@ html, body {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
 .block{
-  background-color: #606060;
+  position: relative;
   display:inline-block;
+  width: 36px;
+  height: 8px;
+  top:-8px;
+  left: -12px;
+  background-color: #606060;
+}
+.divider{
+  height: 2px;
+  width: 50%;
+  margin: 32px auto;
+  background-color: #606060;
 }
 .container{
   position: relative;
@@ -17,8 +28,9 @@ html, body {
   box-shadow: 2px 4px 4px rgba(10,10,10,.8)
 }
 .header{
-  height: 40px;
-  background-color: #3f83c4;
+  height: 38px;
+  max-height: 40px;
+  background-color: #606060;
 }
 .name{
     background-color: #fff;
@@ -70,24 +82,46 @@ html, body {
   width: 70%;
   padding: 12px;
   margin: 0 auto;
-}
-.about-me .block{
-  position: relative;
-  width: 36px;
-  height: 10px;
-  display: inline-block;
+  text-align: center;
 }
 .about-me h2{
-  font-size: 36px;
   font-style: normal;
-  font-weight: bolder;
-  color: #000;
-  text-align: center;
 }
 .about-me p{
   font-size: 16px;
   letter-spacing: 1px;
   word-spacing: 2px;
+  text-indent: 2em;
+  text-align: left;
+}
+
+.experience{
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.exp-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.exp-item{
+  position: relative;
+  overflow: hidden;
+  margin: 12px auto;
+}
+.exp-time{
+  width: 28%;
+  float: left;
+}
+.exp-content{
+  width: 70%;
+  float: right;
+  margin: 0 auto;
+  word-spacing: 2px;
+  font-size: 16px;
+  letter-spacing: 1px;
   text-indent: 2em;
   text-align: left;
 }
