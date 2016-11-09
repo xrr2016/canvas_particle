@@ -1,16 +1,18 @@
 html, body {
     height: 100%;
     margin: 0;
-    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 50%, rgba(255, 255, 255, 0.02) 61%, rgba(0, 0, 0, 0.02) 73%), linear-gradient(33deg, rgba(255, 255, 255, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
-    background-blend-mode: normal, color-burn;
+    background-color: #797572;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  color: #3f3f3f;
 }
 .block{
   position: relative;
   display:inline-block;
   width: 36px;
   height: 8px;
-  top:-8px;
+  top:-2px;
   left: -12px;
   background-color: #606060;
 }
@@ -78,9 +80,10 @@ html, body {
   border-left: 2px solid #3f3f3f;
   border-right: 2px solid #3f3f3f;
 }
-.about-me{
+.about-me,.experience,.skills{
+  position: relative;
+  padding-top: 12px;
   width: 70%;
-  padding: 12px;
   margin: 0 auto;
   text-align: center;
 }
@@ -95,27 +98,35 @@ html, body {
   text-align: left;
 }
 
-.experience{
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
+.experience h3{
+  margin-bottom: 48px;
 }
-.exp-list{
+
+.exp-list,.skills-list{
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.exp-item{
+.exp-item,.skills-item{
   position: relative;
   overflow: hidden;
-  margin: 12px auto;
+  margin: 36px auto;
 }
-.exp-time{
+.exp-time,.skill-name{
   width: 28%;
   float: left;
+  font-size: 20px;
+  color: #3f3f3f;
 }
-.exp-content{
+.exp-title{
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.exp-content,.skill-description{
   width: 70%;
   float: right;
   margin: 0 auto;
@@ -125,7 +136,31 @@ html, body {
   text-indent: 2em;
   text-align: left;
 }
+.check-demo{
+  position: absolute;
+  display: block;
+  text-indent: 0;
+  bottom: 2px;
+  right: 2px;
+  font-size: 12px;
+  color: #233;
+  border-bottom: 1px solid #000;
+}
+.check-demo:hover{
+  text-decoration: underline;
+}
 
+.footer{
+  height: 38px;
+  background-color: #3f3f3f;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  line-height: 38px;
+}
+.footer a{
+  color: #fff;
+}
 
 @media (max-width:640px) {
   html,body{
