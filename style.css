@@ -1,8 +1,9 @@
 html, body {
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
     background-color: #797572;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    line-height: 120%;
 }
 h1,h2,h3,h4,h5,h6{
   color: #3f3f3f;
@@ -72,11 +73,16 @@ h1,h2,h3,h4,h5,h6{
   text-align: center;
   font-size: 16px;
 }
+.contact li:nth-child(3){
+  border-right: 2px solid #3f3f3f;
+}
+
 .contact:nth-of-type(1){
   font-weight: bolder;
 }
+
 .contact .email{
-  width: 56%;
+  width: 30%;
   border-left: 2px solid #3f3f3f;
   border-right: 2px solid #3f3f3f;
 }
@@ -91,11 +97,12 @@ h1,h2,h3,h4,h5,h6{
   font-style: normal;
 }
 .about-me p{
-  font-size: 16px;
-  letter-spacing: 1px;
-  word-spacing: 2px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  word-spacing: 4px;
   text-indent: 2em;
   text-align: left;
+  line-height: 140%;
 }
 
 .experience h3{
@@ -112,14 +119,14 @@ h1,h2,h3,h4,h5,h6{
   overflow: hidden;
   margin: 36px auto;
 }
-.exp-time,.skill-name{
+.skill-name{
   width: 28%;
   float: left;
   font-size: 20px;
   color: #3f3f3f;
 }
 .exp-title{
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   display: block;
   text-align: center;
@@ -133,18 +140,30 @@ h1,h2,h3,h4,h5,h6{
   word-spacing: 2px;
   font-size: 16px;
   letter-spacing: 1px;
-  text-indent: 2em;
+  text-indent: 1em;
   text-align: left;
+}
+.exp-content{
+  width: 100%;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 2%;
+  line-height: 120%;
+}
+.skill-description{
+  line-height: 1.2;
+  word-spacing: 2px;
+  letter-spacing: 3px;
+  font-size: 18px;
 }
 .check-demo{
   position: absolute;
   display: block;
+  color: #233;
   text-indent: 0;
   bottom: 2px;
   right: 2px;
   font-size: 12px;
-  color: #233;
-  border-bottom: 1px solid #000;
 }
 .check-demo:hover{
   text-decoration: underline;
@@ -168,6 +187,25 @@ h1,h2,h3,h4,h5,h6{
     height: 100%;
     padding: 0;
   }
+  .name h2{
+    font-size: 24px;
+  }
+  .contact .block{
+    display: none;
+  }
+  .contact li{
+    width: 45%;
+  }
+  .contact li:nth-child(2){
+    display: none;
+  }
+  .contact li:nth-child(3){
+    border-right: none;
+    border-left: 2px solid #3f3f3f;
+  }
+  .contact li:nth-child(4){
+    display: none;
+  }
   .container{
     width: 100%;
   }
@@ -176,5 +214,22 @@ h1,h2,h3,h4,h5,h6{
   }
   .about-me h2{
     font-size: 20px;
+  }
+  .exp-title{
+    margin-top: 1%;
+  }
+  .exp-content{
+    word-break: normal;
+  }
+  .skill-name{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 6%;
+    margin-top: 1%;
+  }
+  .skill-description{
+    display: block;
+    width: 100%;
   }
 }
