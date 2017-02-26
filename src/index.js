@@ -1,4 +1,4 @@
-import createMap from 'objects/map'
+import createMap from './map'
 
 const W = window
 const canvas = document.getElementById('map')

@@ -3,7 +3,7 @@ class Map {
   constructor (options) {
     this.canvas = options.canvas
     this.ctx = this.canvas.getContext('2d')
-    this.width = this.options.width
+    this.width = options.width
     this.height = options.height
   }
   clear () {

@@ -1,0 +1,32 @@
+{
+  "name": "escape",
+  "version": "0.0.1",
+  "description": "一个用canvas写的小游戏",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start --server --files './dist/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrr2016/escape.git"
+  },
+  "keywords": [
+    "canvas",
+    "es6"
+  ],
+  "author": "xrr2016",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xrr2016/escape/issues"
+  },
+  "homepage": "https://github.com/xrr2016/escape#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.1.10",
+    "browser-sync": "^2.18.8",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
