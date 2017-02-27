@@ -1,5 +1,5 @@
 const path = require('path')
-// const webpack = require('webpack')
+const webpack = require('webpack')
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -19,21 +19,16 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin()
+  ],
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
+    compress: true,
+    port: 9000,
+    hot: true
   }
-  // plugins: [
-    // new webpack.optmize.UglifyJsPlugin({
-    //   compress: {
-    //     warnings: false,
-    //     drop_console: false
-    //   }
-    // }),
-    // new webpack.HotModuleReplacementPlugin(),
-    // new webpack.NamedModulesPlugin()
-  // ]
-  // devServer: {
-  //   contentBase: path.resolve(__dirname, '/dist'),
-  //   compress: true,
-  //   port: 9000,
-  //   hot: true
-  // }
 }
