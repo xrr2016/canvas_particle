@@ -2,8 +2,8 @@ export default class Point {
   constructor (x, y, color) {
     this.x = x
     this.y = y
-    this.color = color || 'rgba(0, 0, 0, .6)'
-    this.radius = Math.random() * 8 + 1
+    this.color = color || '#rgba(0, 0, 0, .7)'
+    this.radius = Math.random() * 10
     // 横向位移速度
     this.ax = Math.random() * 2 - 1
     // 纵向位移速度
@@ -24,12 +24,12 @@ export default class Point {
     let dy = this.y - _point.y
     // 两点距离
     let dis = Math.sqrt(dx * dx + dy * dy)
-    if (dis < 160) {
+    if (dis < 110) {
       ctx.beginPath()
       ctx.moveTo(this.x, this.y)
       ctx.lineTo(_point.x, _point.y)
       ctx.closePath()
-      ctx.strokeStyle = '#aaa'
+      ctx.strokeStyle = '#f5f5f5'
       ctx.stroke()
     }
   }
