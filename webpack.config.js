@@ -3,7 +3,7 @@ const webpack = require('webpack')
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
-  entry: './index.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -28,7 +28,7 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     compress: true,
-    port: 9000,
+    port: 8000,
     hot: true
   }
 }
